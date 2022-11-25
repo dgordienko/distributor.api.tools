@@ -16,3 +16,10 @@ You mast check .env file in appication folder, his view like this:
 SYSTEM_CONTAINERS = ["rabbitmq", "mongo", "redis"]
 APP_CONTAINERS = ["docorder.listener", "dockreturn.listener", "protocol.promo.listener", "protocol.doctax.listener","protocol.android.visit"]
 ~~~~
+
+Test
+
+~~~shell
+pip install pythest
+pytest test_app.py
+~~~
