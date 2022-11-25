@@ -22,3 +22,4 @@ urllib3==1.26.13; python_version >= "3.7" and python_full_version < "3.0.0" and 
 websocket-client==1.4.2; python_version >= "3.7"
 win32-setctime==1.1.0; sys_platform == "win32" and python_version >= "3.5"
 zipp==3.10.0; python_version < "3.8" and python_version >= "3.7"
+python-dotenv==0.21.0
