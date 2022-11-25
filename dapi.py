@@ -12,6 +12,9 @@ app = typer.Typer()
 
 @app.command()
 def docker_restart():
+    '''
+    Restart containers order
+    '''
     syscont = os.getenv('SYSTEM_CONTAINERS')
     appcont = os.getenv('APP_CONTAINERS')
     syscont = json.loads(syscont)
@@ -36,8 +39,12 @@ def docker_restart():
             client.containers.get(contname).restart()
             logger.info('Restart {}'.format(contname))
 
+
 @app.command()
 def docker_check():
+    '''
+    Check containers status
+    '''
     syscont = os.getenv('SYSTEM_CONTAINERS')
     appcont = os.getenv('APP_CONTAINERS')
     syscont = json.loads(syscont)
